@@ -19,24 +19,13 @@ const Vp = v.of(P).in(C)
 
 const Vq = v.of(Q).in(C)
 
-// Would be cool if:
+/*
 
-  //  v.of(P).onlyIf(Q).in(C)
+given(
+  thSet(C),
+  theSentence('P', x => existsInTheGivenSet(x * x - x - 2)),
+  theSentence('Q', x => onlyIfOdd(x * x -1))
+  
+.calculateTheTruthSet(of('P').and('Q'))
 
-  //  v.of(P).ifAndOnlyIf(Q).in(C)
-
-  //  v.of(P).and(Q)
-
-// Would be even cooler if:
-
-  /*
-
-  v(of(P),
-    onlyIf(Q),
-    in(C))
-
-  v(of(P),
-    and(Q),
-    in(C))
-
-  */
+*/
